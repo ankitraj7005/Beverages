@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <script src="https://kit.fontawesome.com/789d03dbba.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: #222222;
+            background-image: url("./Images/background-image1.jpg");
+
+
+        }
+
+        .signup {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            background-color: #222222;
+            color: white;
+            opacity: 0.9;
+            margin-top: 40px;
+            border-radius: 1cm;
+            box-shadow: 8px 8px 8px 8px #000000;
+        }
+
+        .signup h1 {
+            text-align: center;
+        }
+
+        .signup-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0.5em;
+
+        }
+
+        .content {
+            margin: 0.7em;
+            text-align: center;
+            padding: 0.7em;
+            color: white;
+
+
+        }
+
+        input[type='text']::placeholder {
+            text-align: left;
+        }
+
+        input[type='email']::placeholder {
+            text-align: left;
+        }
+
+        input[type='password']::placeholder {
+            text-align: left;
+        }
+
+        .content input {
+            /*border:1px solid blue;*/
+            justify-content: center;
+            border-radius: 2cm;
+            padding: 0.5em;
+            outline-color: rgb(8, 238, 8);
+            width: 50%;
+
+        }
+
+        .content input[type='submit'] {
+            width: 20%;
+            text-align: center;
+            outline: none;
+
+        }
+
+        input[type='submit']:hover {
+            background-color: rgb(0, 255, 0);
+            box-shadow: 3px 3px 3px 3px #000000;
+
+        }
+
+        @media (max-width: 768px) {
+            .signup {
+                width: 100%;
+            }
+
+            input[type='submit'] {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup">
+        <h1>Sign up</h1>
+        <div class="signup-content">
+            <form action="./login.html">
+                <div class="content">
+                    <label for="">First Name:</label>
+                    <input type="text" name="User-id" placeholder="First name" title="Enter first name">
+
+                </div>
+                <div class="content">
+                    <label for="">Last Name:</label>
+                    <input type="text" name="User-id" placeholder="Last name" title="Enter last name">
+
+                </div>
+                <div class="content">
+                    <label for="">Email Id:</label>
+                    <input type="email" name="User-id" placeholder="Email id" title="Enter email id">
+
+                </div>
+                <div class="content">
+                    <label for="">Password</label>
+                    <input type="Password" name="name" placeholder="Create password" title="Create password">
+                </div>
+                <div class="content">
+                    <label for="">Mobile No</label>
+                    <input type="text" name="User-id" placeholder="Mobile No." title="Enter mobile No.">
+
+                </div>
+                <div class="content">
+                    <label for="">Address:</label>
+                    <input type="text" name="User-id" placeholder="Address" title="Enter address">
+
+                </div>
+                <div class="content">
+                    <input type="submit" name="signup" value="Create" title="Redirected to the login page">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
