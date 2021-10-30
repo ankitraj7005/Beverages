@@ -305,6 +305,8 @@ img{
     .flex-container {
         width:100%;
         flex-direction:row;
+        margin-left:0px;
+        align-items: center;
     }
     .image {
         width:100%;
